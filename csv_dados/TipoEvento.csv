@@ -1,0 +1,31 @@
+evento,arma,faixa_etaria,total_peso,total,vitima
+Apreensão de Cocaína,False,False,True,False,False
+Apreensão de Maconha,False,False,True,False,False
+Arma de Fogo Apreendida,True,False,False,True,False
+Atendimento pré-hospitalar,False,False,False,True,False
+Busca e salvamento,False,False,False,True,False
+Combate a incêndios,False,False,False,True,False
+Emissão de Alvarás de licença,False,False,False,True,False
+Estupro,False,False,False,False,True
+Estupro de vulnerável,False,False,False,False,True
+Feminicídio,False,False,False,False,True
+Furto de veículo,False,False,False,True,False
+Homicídio doloso,False,False,False,False,True
+Lesão corporal seguida de morte,False,False,False,False,True
+Mandado de prisão cumprido,False,False,False,True,False
+Morte de Agente do Estado,False,False,False,False,True
+Morte no trânsito ou em decorrência dele (exceto homicídio doloso),False,False,False,False,True
+Morte por intervenção de Agente do Estado,False,False,False,False,True
+Mortes a esclarecer (sem indício de crime),False,False,False,False,True
+Pessoa Desaparecida,False,True,False,False,True
+Pessoa Localizada,False,True,False,False,True
+Realização de vistorias,False,False,False,True,False
+Roubo a instituição financeira,False,False,False,True,False
+Roubo de carga,False,False,False,True,False
+Roubo de veículo,False,False,False,True,False
+Roubo seguido de morte (latrocínio),False,False,False,False,True
+Suicídio,False,False,False,False,True
+Suicídio de Agente do Estado,False,False,False,False,True
+Tentativa de feminicídio,False,False,False,False,True
+Tentativa de homicídio,False,False,False,False,True
+Tráfico de drogas,False,False,False,True,False
