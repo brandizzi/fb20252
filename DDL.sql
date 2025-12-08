@@ -27,8 +27,9 @@ CREATE TABLE UF (
 
 CREATE TABLE Municipio (
     id    SERIAL PRIMARY KEY,
-    nome  VARCHAR(40) UNIQUE NOT NULL,
-    uf_id INTEGER REFERENCES UF(id)
+    nome  VARCHAR(40) NOT NULL,
+    uf_id INTEGER NOT NULL REFERENCES UF(id),
+    UNIQUE (nome, uf_id)
 );
 
 CREATE TABLE Arma (
@@ -60,8 +61,8 @@ CREATE TABLE AgregacaoEvento (
     vitimas_masculinas INTEGER,
     vitimas_nao_inform INTEGER,
     total_vitimas      INTEGER,
-    total_objetos      INTEGER,
-    total_peso         INTEGER,
+    total_objetos      NUMERIC,
+    total_peso         NUMERIC,
     tipo_evento_id     INTEGER NOT NULL REFERENCES TipoEvento(id),
     uf_id              INTEGER NOT NULL REFERENCES UF(id),
     municipio_id       INTEGER NOT NULL REFERENCES Municipio(id),
@@ -73,15 +74,15 @@ CREATE TABLE AgregacaoEvento (
 );
 
 CREATE TABLE PopulacaoUF (
-    uf_id     INTEGER UNIQUE NOT NULL REFERENCES UF(id),
-    ano       INTEGER UNIQUE NOT NULL,
-    populacao INTEGER UNIQUE NOT NULL,
+    uf_id     INTEGER NOT NULL REFERENCES UF(id),
+    ano       INTEGER NOT NULL,
+    populacao INTEGER NOT NULL,
     PRIMARY KEY (uf_id, ano)
 );
 
 CREATE TABLE PopulacaoMunicipio (
-    municipio_id INTEGER UNIQUE NOT NULL REFERENCES Municipio(id),
-    ano          INTEGER UNIQUE NOT NULL,
-    populacao    INTEGER UNIQUE NOT NULL,
+    municipio_id INTEGER NOT NULL REFERENCES Municipio(id),
+    ano          INTEGER NOT NULL,
+    populacao    INTEGER NOT NULL,
     PRIMARY KEY (municipio_id, ano)
 );
