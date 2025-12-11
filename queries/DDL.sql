@@ -65,7 +65,7 @@ CREATE TABLE AgregacaoEvento (
     total_peso         NUMERIC,
     tipo_evento_id     INTEGER NOT NULL REFERENCES TipoEvento(id),
     uf_id              INTEGER NOT NULL REFERENCES UF(id),
-    municipio_id       INTEGER NOT NULL REFERENCES Municipio(id),
+    municipio_id       INTEGER REFERENCES Municipio(id),
     abrangencia_id     INTEGER NOT NULL REFERENCES Abrangencia(id),
     formulario_id      INTEGER NOT NULL REFERENCES Formulario(id),
     orgao_agente_id    INTEGER REFERENCES OrgaoAgente(id),

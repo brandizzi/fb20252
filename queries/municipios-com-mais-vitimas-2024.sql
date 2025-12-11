@@ -1,5 +1,3 @@
-SELECT * FROM TipoEvento WHERE tem_vitima;
-
 SELECT 
 	pm.ano,
 	uf.sigla,
